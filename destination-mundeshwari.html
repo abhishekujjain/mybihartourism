@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mundeshwari Devi Temple - The oldest functional temple in the world located in Kaimur, Bihar. Dedicated to Lord Shiva and Shakti.">
+    <meta name="keywords" content="Mundeshwari Devi Temple, oldest temple, Kaimur, Bihar tourism, ancient temple, Hindu pilgrimage">
+    <meta name="author" content="Explore Bihar">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Mundeshwari Devi Temple - Oldest Functional Temple">
+    <meta property="og:description" content="Visit Mundeshwari Devi Temple in Kaimur, Bihar - believed to be the oldest functional temple in the world.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Mundeshwari Devi Temple - Ancient Temple</title>
+    <link rel="canonical" href="https://explorebihar.com/destinations/mundeshwari-devi-temple">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.95));
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            background: linear-gradient(135deg, #f4a261, #e76f51);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f4a261;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)),
+                        url('https://images.unsplash.com/photo-1548013146-72479768bada?w=1920') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+            position: relative;
+        }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .badge {
+            background: linear-gradient(135deg, #f4a261, #e76f51);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 4rem 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .main-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content h2 {
+            color: #264653;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .main-content p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .sidebar {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+
+        .sidebar h3 {
+            color: #264653;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.3rem;
+        }
+
+        .info-value {
+            color: #666;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav a {
+                margin: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    🏛️ <span>Explore Bihar</span>
+                </a>
+                <nav>
+                    <a href="index.html#destinations">Destinations</a>
+                    <a href="index.html#circuits">Circuits</a>
+                    <a href="index.html#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">Oldest Functional Temple</span>
+            <h1>Mundeshwari Devi Temple</h1>
+            <p>The ancient temple in Kaimur dedicated to Lord Shiva and Shakti</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>About Mundeshwari Devi Temple</h2>
+                    <p>The Mundeshwari Devi Temple in Kaimur has idols of Lord Vishnu, Surya and Ganesha. It is famous as the oldest functional temple of the world, with a history dating back to the 6th century AD.</p>
+                    
+                    <p>Located on the Mundeshwari Hills, this temple is dedicated to Lord Shiva and Shakti. The temple features unique octagonal architecture and showcases the rich cultural heritage of ancient Bihar.</p>
+
+                    <h2>Historical Significance</h2>
+                    <p>Mundeshwari Devi Temple is believed to be the oldest functional temple in the world, with continuous worship for over 1,400 years. The temple has withstood the test of time and remains an important pilgrimage site for devotees.</p>
+
+                    <h2>Architecture</h2>
+                    <p>The temple features unique octagonal architecture, which is rare in Indian temple construction. The sanctum sanctorum houses idols of various deities, and the temple walls are adorned with intricate carvings and sculptures.</p>
+
+                    <div class="image-gallery">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=400" alt="Mundeshwari Temple">
+                        <img src="https://images.unsplash.com/photo-1605218427368-35d9e133b4fb?w=400" alt="Temple Architecture">
+                        <img src="https://images.unsplash.com/photo-1545179738-76238a860c2c?w=400" alt="Ancient Structure">
+                    </div>
+
+                    <h2>Visitor Information</h2>
+                    <p>The temple is open throughout the year and can be accessed by a short trek from the base of the hill. The best time to visit is during the winter months. Special festivals are celebrated during Navratri and other important Hindu occasions.</p>
+
+                    <a href="index.html" class="back-button">← Back to Destinations</a>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Quick Info</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-label">Location</div>
+                        <div class="info-value">Kaimur District, Bihar</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Distance from Patna</div>
+                        <div class="info-value">Approximately 200 km</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Best Time to Visit</div>
+                        <div class="info-value">October to March</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Timings</div>
+                        <div class="info-value">6:00 AM - 8:00 PM</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Entry Fee</div>
+                        <div class="info-value">Free for all visitors</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Historical Period</div>
+                        <div class="info-value">6th Century AD</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Deities</div>
+                        <div class="info-value">Lord Shiva, Shakti, Vishnu, Surya</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Architecture</div>
+                        <div class="info-value">Octagonal Temple Structure</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #264653; color: white; padding: 2rem 0; text-align: center;">
+        <div class="container">
+            <p>© 2024 Explore Bihar. All Rights Reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Designed for Travelers</p>
+        </div>
+    </footer>
+</body>
+</html>

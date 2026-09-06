@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barabar Caves - Ancient rock-cut caves in Jehanabad, Bihar dating back to the Mauryan period. Oldest surviving rock-cut caves in India.">
+    <meta name="keywords" content="Barabar Caves, ancient caves, Jehanabad, Mauryan period, Bihar tourism, rock-cut architecture">
+    <meta name="author" content="Explore Bihar">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Barabar Caves - Ancient Rock-Cut Caves">
+    <meta property="og:description" content="Visit Barabar Caves in Jehanabad, Bihar - the oldest surviving rock-cut caves in India dating back to the Mauryan period.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Barabar Caves - Ancient Caves</title>
+    <link rel="canonical" href="https://explorebihar.com/destinations/barabar-caves">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.95));
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            background: linear-gradient(135deg, #f4a261, #e76f51);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f4a261;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)),
+                        url('https://images.unsplash.com/photo-1628062927234-7b7dda8b7571?w=1920') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+            position: relative;
+        }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .badge {
+            background: linear-gradient(135deg, #f4a261, #e76f51);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 4rem 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .main-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content h2 {
+            color: #264653;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .main-content p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .sidebar {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+
+        .sidebar h3 {
+            color: #264653;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.3rem;
+        }
+
+        .info-value {
+            color: #666;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav a {
+                margin: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    🏛️ <span>Explore Bihar</span>
+                </a>
+                <nav>
+                    <a href="index.html#destinations">Destinations</a>
+                    <a href="index.html#circuits">Circuits</a>
+                    <a href="index.html#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">Ancient Caves</span>
+            <h1>Barabar Caves</h1>
+            <p>The oldest surviving rock-cut caves in India dating back to the Mauryan period</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>About Barabar Caves</h2>
+                    <p>Barabar Caves in Jehanabad is a sought after tourist destination. These ancient rock-cut caves date back to the Mauryan period (3rd century BC) and are the oldest surviving rock-cut caves in India.</p>
+                    
+                    <p>The caves were commissioned by Emperor Ashoka for the Ajivika sect, a non-Buddhist religious group. The remarkable feature of these caves is their highly polished interior surfaces, which still shine after 2,300 years.</p>
+
+                    <h2>Historical Significance</h2>
+                    <p>Barabar Caves are of immense historical importance as they represent the earliest example of rock-cut architecture in India. The caves have been mentioned in various ancient texts and have been studied by archaeologists for their unique construction techniques.</p>
+
+                    <h2>Architecture</h2>
+                    <p>The caves consist of four main chambers: Lomas Rishi, Sudama, Vishvakarma, and Karan Chaupar. The Lomas Rishi cave is particularly famous for its beautifully carved entrance resembling a wooden hut. The interior surfaces are incredibly smooth, showcasing the advanced craftsmanship of the Mauryan period.</p>
+
+                    <div class="image-gallery">
+                        <img src="https://images.unsplash.com/photo-1628062927234-7b7dda8b7571?w=400" alt="Barabar Caves">
+                        <img src="https://images.unsplash.com/photo-1545179738-76238a860c2c?w=400" alt="Cave Interior">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=400" alt="Rock-cut Architecture">
+                    </div>
+
+                    <h2>Visitor Information</h2>
+                    <p>The caves are open to visitors and offer a unique glimpse into ancient Indian rock-cut architecture. The site is well-maintained and provides information about the historical significance of each cave. The best time to visit is from October to March.</p>
+
+                    <a href="index.html" class="back-button">← Back to Destinations</a>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Quick Info</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-label">Location</div>
+                        <div class="info-value">Jehanabad District, Bihar</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Distance from Patna</div>
+                        <div class="info-value">Approximately 45 km</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Best Time to Visit</div>
+                        <div class="info-value">October to March</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Timings</div>
+                        <div class="info-value">Sunrise to Sunset</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Entry Fee</div>
+                        <div class="info-value">Free for all visitors</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Historical Period</div>
+                        <div class="info-value">Mauryan Period (3rd Century BC)</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Commissioned By</div>
+                        <div class="info-value">Emperor Ashoka</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Main Caves</div>
+                        <div class="info-value">Lomas Rishi, Sudama, Vishvakarma, Karan Chaupar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #264653; color: white; padding: 2rem 0; text-align: center;">
+        <div class="container">
+            <p>© 2024 Explore Bihar. All Rights Reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Designed for Travelers</p>
+        </div>
+    </footer>
+</body>
+</html>

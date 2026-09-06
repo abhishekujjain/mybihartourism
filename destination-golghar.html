@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Golghar - A magnificent granary built in 1786 in Patna, Bihar. Offers panoramic views of the city and the Ganges river.">
+    <meta name="keywords" content="Golghar, Patna, historic monument, granary, Bihar tourism, colonial architecture">
+    <meta name="author" content="Explore Bihar">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Golghar - Historic Monument in Patna">
+    <meta property="og:description" content="Visit Golghar in Patna, the magnificent granary built in 1786 offering panoramic views of the city and Ganges river.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Golghar - Historic Monument</title>
+    <link rel="canonical" href="https://explorebihar.com/destinations/golghar">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.95));
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            background: linear-gradient(135deg, #f4a261, #e76f51);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f4a261;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)),
+                        url('https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1920') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+            position: relative;
+        }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .badge {
+            background: linear-gradient(135deg, #f4a261, #e76f51);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 4rem 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .main-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content h2 {
+            color: #264653;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .main-content p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .sidebar {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+
+        .sidebar h3 {
+            color: #264653;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.3rem;
+        }
+
+        .info-value {
+            color: #666;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav a {
+                margin: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    🏛️ <span>Explore Bihar</span>
+                </a>
+                <nav>
+                    <a href="index.html#destinations">Destinations</a>
+                    <a href="index.html#circuits">Circuits</a>
+                    <a href="index.html#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">Historic Monument</span>
+            <h1>Golghar</h1>
+            <p>The magnificent granary built in 1786 offering panoramic views of Patna and the Ganges</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>About Golghar</h2>
+                    <p>Golghar is a magnificent granary built in 1786. It offers a panoramic view of Patna city and the Ganges river. This iconic structure is one of Patna's most recognizable landmarks and a testament to the architectural prowess of the British era.</p>
+                    
+                    <p>The name "Golghar" means "Round House" in Hindi, referring to its unique spherical shape. The structure was built by Captain John Garstin as a response to the devastating famine of 1770, with the intention of storing grains for future emergencies.</p>
+
+                    <h2>Historical Significance</h2>
+                    <p>Golghar was built following the Bengal famine of 1770, which claimed millions of lives. The British administration wanted to create a storage facility to prevent such tragedies in the future. However, due to design flaws, the granary was never used for its intended purpose.</p>
+
+                    <h2>Architecture</h2>
+                    <p>The structure features a unique beehive shape with a base diameter of 125 meters and a height of 29 meters. The walls are 3.6 meters thick at the base. A staircase with 145 steps leads to the top, offering breathtaking views of the city and the Ganges river.</p>
+
+                    <div class="image-gallery">
+                        <img src="https://images.unsplash.com/photo-1587474260584-136574528ed5?w=400" alt="Golghar">
+                        <img src="https://images.unsplash.com/photo-1545179738-76238a860c2c?w=400" alt="Panoramic View">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=400" alt="Colonial Architecture">
+                    </div>
+
+                    <h2>Visitor Information</h2>
+                    <p>Golghar is open to visitors and offers a unique experience of climbing to the top for panoramic views. The structure is illuminated in the evenings, making it a beautiful sight. The best time to visit is during sunset when the views are spectacular.</p>
+
+                    <a href="index.html" class="back-button">← Back to Destinations</a>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Quick Info</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-label">Location</div>
+                        <div class="info-value">Patna, Bihar</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Distance from City Center</div>
+                        <div class="info-value">Approximately 2 km</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Best Time to Visit</div>
+                        <div class="info-value">October to March</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Timings</div>
+                        <div class="info-value">9:00 AM - 6:00 PM</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Entry Fee</div>
+                        <div class="info-value">Nominal fee applicable</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Built</div>
+                        <div class="info-value">1786</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Height</div>
+                        <div class="info-value">29 meters</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Steps to Top</div>
+                        <div class="info-value">145 steps</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #264653; color: white; padding: 2rem 0; text-align: center;">
+        <div class="container">
+            <p>© 2024 Explore Bihar. All Rights Reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Designed for Travelers</p>
+        </div>
+    </footer>
+</body>
+</html>

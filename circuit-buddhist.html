@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buddhist Circuit in Bihar - Follow the footsteps of Lord Buddha through sacred sites including Bodh Gaya, Nalanda, Rajgir, and Vaishali.">
+    <meta name="keywords" content="Buddhist Circuit, Bihar, Bodh Gaya, Nalanda, Rajgir, Vaishali, Buddha pilgrimage, Buddhist tourism">
+    <meta name="author" content="Explore Bihar">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Buddhist Circuit - Walk in Buddha's Footsteps">
+    <meta property="og:description" content="Explore the sacred Buddhist Circuit in Bihar, visiting Bodh Gaya, Nalanda, Rajgir, and other important sites from Buddha's life.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Buddhist Circuit - Sacred Pilgrimage</title>
+    <link rel="canonical" href="https://explorebihar.com/circuits/buddhist-circuit">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.95));
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            background: linear-gradient(135deg, #f4a261, #e76f51);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f4a261;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)),
+                        url('https://images.unsplash.com/photo-1545179738-76238a860c2c?w=1920') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+            position: relative;
+        }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .badge {
+            background: linear-gradient(135deg, #f4a261, #e76f51);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 4rem 0;
+        }
+
+        .circuit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .circuit-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+
+        .circuit-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .circuit-card h3 {
+            color: #264653;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .circuit-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .circuit-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav a {
+                margin: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    🏛️ <span>Explore Bihar</span>
+                </a>
+                <nav>
+                    <a href="index.html#destinations">Destinations</a>
+                    <a href="index.html#circuits">Circuits</a>
+                    <a href="index.html#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">Sacred Pilgrimage</span>
+            <h1>Buddhist Circuit</h1>
+            <p>Follow the footsteps of Lord Buddha through sacred sites and ancient monasteries</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="color: #264653; font-size: 2.5rem; margin-bottom: 1rem;">Sacred Buddhist Destinations</h2>
+                <p style="color: #666; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">Explore the most important Buddhist sites in Bihar, each holding immense religious and historical significance in the life of Lord Buddha.</p>
+            </div>
+
+            <div class="circuit-grid">
+                <a href="destination-mahabodhi.html" class="circuit-card">
+                    <div class="icon">🙏</div>
+                    <h3>Bodh Gaya</h3>
+                    <p>The sacred place where Lord Buddha attained enlightenment under the Bodhi tree. Home to the magnificent Mahabodhi Temple, a UNESCO World Heritage Site.</p>
+                </a>
+
+                <a href="destination-nalanda.html" class="circuit-card">
+                    <div class="icon">📚</div>
+                    <h3>Nalanda</h3>
+                    <p>The ancient university that was the most renowned center of Buddhist learning. Explore the archaeological ruins of this UNESCO World Heritage Site.</p>
+                </a>
+
+                <div class="circuit-card">
+                    <div class="icon">🏔️</div>
+                    <h3>Rajgir</h3>
+                    <p>The ancient capital of Magadha where Buddha spent many years. Visit Gridhakuta (Vulture's Peak) where he delivered many important sermons.</p>
+                </div>
+
+                <div class="circuit-card">
+                    <div class="icon">🌸</div>
+                    <h3>Vaishali</h3>
+                    <p>The place where Buddha preached his last sermon. Home to the Ashokan Pillar and the ancient Buddhist stupas and monasteries.</p>
+                </div>
+
+                <div class="circuit-card">
+                    <div class="icon">🕉️</div>
+                    <h3>Kesariya</h3>
+                    <p>Home to the world's tallest Buddhist stupa. This magnificent structure stands as a testament to Bihar's rich Buddhist heritage.</p>
+                </div>
+
+                <div class="circuit-card">
+                    <div class="icon">🏛️</div>
+                    <h3>Vikramshila</h3>
+                    <p>The ruins of another ancient Buddhist university located in Bhagalpur. An important center of Tantric Buddhism in ancient times.</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="index.html" class="back-button">← Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #264653; color: white; padding: 2rem 0; text-align: center;">
+        <div class="container">
+            <p>© 2024 Explore Bihar. All Rights Reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Designed for Travelers</p>
+        </div>
+    </footer>
+</body>
+</html>

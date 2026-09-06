@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Valmiki Tiger Reserve - The only tiger reserve in Bihar located in West Champaran. Experience wildlife and nature at its best.">
+    <meta name="keywords" content="Valmiki Tiger Reserve, Bihar wildlife, tiger reserve, West Champaran, wildlife sanctuary, nature tourism">
+    <meta name="author" content="Explore Bihar">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Valmiki Tiger Reserve - Bihar's Wildlife Paradise">
+    <meta property="og:description" content="Visit Valmiki Tiger Reserve, the only tiger reserve in Bihar, and experience the thrill of wildlife in its natural habitat.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <title>Valmiki Tiger Reserve - Wildlife Sanctuary</title>
+    <link rel="canonical" href="https://explorebihar.com/destinations/valmiki-tiger-reserve">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.95));
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            background: linear-gradient(135deg, #f4a261, #e76f51);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #f4a261;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)),
+                        url('https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=1920') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            padding-top: 80px;
+            position: relative;
+        }
+
+        .hero-content {
+            z-index: 1;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero .badge {
+            background: linear-gradient(135deg, #f4a261, #e76f51);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 4rem 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .main-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content h2 {
+            color: #264653;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .main-content p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .sidebar {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            height: fit-content;
+        }
+
+        .sidebar h3 {
+            color: #264653;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .info-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .info-item:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 0.3rem;
+        }
+
+        .info-value {
+            color: #666;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            margin-top: 2rem;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            nav a {
+                margin: 0 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    🏛️ <span>Explore Bihar</span>
+                </a>
+                <nav>
+                    <a href="index.html#destinations">Destinations</a>
+                    <a href="index.html#circuits">Circuits</a>
+                    <a href="index.html#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">Wildlife Sanctuary</span>
+            <h1>Valmiki Tiger Reserve</h1>
+            <p>The only tiger reserve in Bihar - experience wildlife at its best</p>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="content">
+        <div class="container">
+            <div class="content-grid">
+                <div class="main-content">
+                    <h2>About Valmiki Tiger Reserve</h2>
+                    <p>Valmiki Tiger Reserve in West Champaran is the only tiger reserve in Bihar. Located in the Gangetic plains, this wildlife sanctuary offers visitors a chance to experience the thrill of nature and witness majestic tigers in their natural habitat.</p>
+                    
+                    <p>The reserve is named after the ancient Valmiki Ashram and covers an area of 899 square kilometers. It is home to diverse flora and fauna, including the Royal Bengal Tiger, leopard, sloth bear, and various species of deer and birds.</p>
+
+                    <h2>Wildlife and Biodiversity</h2>
+                    <p>The reserve is a biodiversity hotspot with over 300 species of birds, 40 species of mammals, and numerous reptiles and amphibians. The dense forests and grasslands provide the perfect habitat for these species. Visitors can spot tigers, leopards, Indian bison, sambar deer, and chital deer during safaris.</p>
+
+                    <h2>Landscape and Geography</h2>
+                    <p>The reserve features diverse landscapes including dense forests, grasslands, and riverine ecosystems. The Gandak River flows through the reserve, adding to its scenic beauty. The terrain varies from flat plains to hilly areas, offering varied habitats for wildlife.</p>
+
+                    <div class="image-gallery">
+                        <img src="https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=400" alt="Tiger in Reserve">
+                        <img src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=400" alt="Forest Landscape">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?w=400" alt="Wildlife Sanctuary">
+                    </div>
+
+                    <h2>Visitor Information</h2>
+                    <p>The reserve offers jeep safaris and nature walks for visitors. The best time to visit is from October to June when the weather is pleasant and wildlife sightings are more frequent. Permits are required for entry and can be obtained at the forest office.</p>
+
+                    <a href="index.html" class="back-button">← Back to Destinations</a>
+                </div>
+
+                <div class="sidebar">
+                    <h3>Quick Info</h3>
+                    
+                    <div class="info-item">
+                        <div class="info-label">Location</div>
+                        <div class="info-value">West Champaran District, Bihar</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Distance from Patna</div>
+                        <div class="info-value">Approximately 275 km</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Best Time to Visit</div>
+                        <div class="info-value">October to June</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Safari Timings</div>
+                        <div class="info-value">6:00 AM - 10:00 AM, 2:00 PM - 6:00 PM</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Entry Fee</div>
+                        <div class="info-value">Varies (Permit required)</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Area</div>
+                        <div class="info-value">899 square kilometers</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Key Wildlife</div>
+                        <div class="info-value">Tigers, Leopards, Deer, Birds</div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-label">Activities</div>
+                        <div class="info-value">Jeep Safari, Nature Walk, Bird Watching</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background: #264653; color: white; padding: 2rem 0; text-align: center;">
+        <div class="container">
+            <p>© 2024 Explore Bihar. All Rights Reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">Designed for Travelers</p>
+        </div>
+    </footer>
+</body>
+</html>
