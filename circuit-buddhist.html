@@ -1,232 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Buddhist Circuit in Bihar - Follow the footsteps of Lord Buddha through sacred sites including Bodh Gaya, Nalanda, Rajgir, and Vaishali.">
-    <meta name="keywords" content="Buddhist Circuit, Bihar, Bodh Gaya, Nalanda, Rajgir, Vaishali, Buddha pilgrimage, Buddhist tourism">
+    <meta name="description" content="Follow Bihar's Buddhist Circuit through Bodh Gaya, Nalanda, Rajgir, Vaishali, Kesariya, and Vikramshila. A practical pilgrimage and heritage route.">
     <meta name="author" content="Explore Bihar">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Buddhist Circuit - Walk in Buddha's Footsteps">
-    <meta property="og:description" content="Explore the sacred Buddhist Circuit in Bihar, visiting Bodh Gaya, Nalanda, Rajgir, and other important sites from Buddha's life.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#2a3329">
+    <meta name="geo.region" content="IN-BR">
+    <meta name="geo.placename" content="Bihar, India">
+    <meta property="og:title" content="Buddhist Circuit in Bihar: Bodh Gaya, Nalanda & More | Explore Bihar">
+    <meta property="og:description" content="Follow Bihar's Buddhist Circuit through Bodh Gaya, Nalanda, Rajgir, Vaishali, Kesariya, and Vikramshila. A practical pilgrimage and heritage route.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.mybihartourism.space/circuit-buddhist.html">
+    <meta property="og:image" content="https://www.mybihartourism.space/assets/images/mahabodhi-temple.jpg">
+    <meta property="og:image:alt" content="Buddhist Circuit">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Explore Bihar">
     <meta name="twitter:card" content="summary_large_image">
-    <title>Buddhist Circuit - Sacred Pilgrimage</title>
+    <meta name="twitter:title" content="Buddhist Circuit in Bihar: Bodh Gaya, Nalanda & More | Explore Bihar">
+    <meta name="twitter:description" content="Follow Bihar's Buddhist Circuit through Bodh Gaya, Nalanda, Rajgir, Vaishali, Kesariya, and Vikramshila. A practical pilgrimage and heritage route.">
+    <meta name="twitter:image" content="https://www.mybihartourism.space/assets/images/mahabodhi-temple.jpg">
+    <title>Buddhist Circuit in Bihar: Bodh Gaya, Nalanda & More | Explore Bihar</title>
     <link rel="icon" href="assets/images/logo.jpg" type="image/jpeg">
-    <link rel="canonical" href="https://explorebihar.com/circuits/buddhist-circuit">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.95));
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-decoration: none;
-            color: white;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .logo img {
-            height: 44px;
-            width: 44px;
-            object-fit: cover;
-            border-radius: 10px;
-            background: #f6f0e4;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        .logo span {
-            background: linear-gradient(135deg, #f4a261, #e76f51);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 2rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #f4a261;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 60vh;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)),
-                        url('assets/images/mahabodhi-temple.jpg') center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            padding-top: 80px;
-            position: relative;
-        }
-
-        .hero-content {
-            z-index: 1;
-            max-width: 800px;
-            padding: 2rem;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            font-weight: 800;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .hero .badge {
-            background: linear-gradient(135deg, #f4a261, #e76f51);
-            color: white;
-            padding: 0.5rem 1.5rem;
-            border-radius: 25px;
-            font-size: 1rem;
-            font-weight: 600;
-            display: inline-block;
-            margin-bottom: 1rem;
-        }
-
-        /* Content Section */
-        .content {
-            padding: 4rem 0;
-        }
-
-        .circuit-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .circuit-card {
-            background: white;
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            text-decoration: none;
-            color: #333;
-            display: block;
-        }
-
-        .circuit-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        .circuit-card h3 {
-            color: #264653;
-            margin-bottom: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .circuit-card p {
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-
-        .circuit-card .icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .back-button {
-            display: inline-block;
-            padding: 0.8rem 2rem;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: 600;
-            margin-top: 2rem;
-            transition: all 0.3s ease;
-        }
-
-        .back-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
+    <link rel="apple-touch-icon" href="assets/images/logo.jpg">
+    <link rel="canonical" href="https://www.mybihartourism.space/circuit-buddhist.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "TouristTrip",
+          "name": "Buddhist Circuit — Bihar",
+          "description": "Follow Bihar's Buddhist Circuit through Bodh Gaya, Nalanda, Rajgir, Vaishali, Kesariya, and Vikramshila. A practical pilgrimage and heritage route.",
+          "image": "https://www.mybihartourism.space/assets/images/mahabodhi-temple.jpg",
+          "url": "https://www.mybihartourism.space/circuit-buddhist.html",
+          "touristType": "Heritage tourism",
+          "itinerary": {
+            "@type": "ItemList",
+            "name": "Buddhist Circuit stops"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://www.mybihartourism.space/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Circuits",
+              "item": "https://www.mybihartourism.space/index.html#circuits"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Buddhist Circuit",
+              "item": "https://www.mybihartourism.space/circuit-buddhist.html"
             }
-
-            .nav-container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            nav a {
-                margin: 0 1rem;
-            }
+          ]
         }
-    </style>
+      ]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/theme.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <!-- Header -->
-    <header>
+    <header class="solid">
         <div class="container">
             <div class="nav-container">
                 <a href="index.html" class="logo">
-                    <img src="assets/images/logo.jpg" alt="Explore Bihar logo">
+                    <img src="assets/images/logo.jpg" alt="Explore Bihar travel guide logo" width="48" height="48">
                     <span>Explore Bihar</span>
                 </a>
-                <nav>
+                <nav aria-label="Primary">
                     <a href="index.html#destinations">Destinations</a>
                     <a href="index.html#circuits">Circuits</a>
+                    <a href="index.html#experiences">Experiences</a>
                     <a href="index.html#contact">Contact</a>
                 </nav>
             </div>
         </div>
     </header>
 
+    <main id="main">
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero hero-sub" style="background-image: url('assets/images/mahabodhi-temple.jpg')">
         <div class="hero-content">
             <span class="badge">Sacred Pilgrimage</span>
             <h1>Buddhist Circuit</h1>
@@ -234,17 +102,68 @@
         </div>
     </section>
 
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <div class="container">
+            <ol>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#circuits">Circuits</a></li>
+                <li aria-current="page">Buddhist Circuit</li>
+            </ol>
+        </div>
+    </nav>
+
     <!-- Content Section -->
     <section class="content">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 3rem;">
-                <h2 style="color: #264653; font-size: 2.5rem; margin-bottom: 1rem;">Sacred Buddhist Destinations</h2>
-                <p style="color: #666; font-size: 1.1rem; max-width: 800px; margin: 0 auto;">Explore the most important Buddhist sites in Bihar, each holding immense religious and historical significance in the life of Lord Buddha.</p>
+            <div class="section-title">
+                <h2>Sacred Buddhist Destinations</h2>
+                <p>Sites in Bihar tied to the Buddha's life, from enlightenment at Bodh Gaya to the universities of Nalanda and Vikramshila.</p>
             </div>
 
             <div class="circuit-grid">
                 <a href="destination-mahabodhi.html" class="circuit-card">
-                    <div class="icon">🙏</div>
+                    <img src="assets/images/mahabodhi-temple.jpg" alt="Mahabodhi Temple in Bodh Gaya" width="640" height="400" loading="lazy" decoding="async">
+                    <div class="circuit-card-body">
+                        <h3>Mahabodhi Temple</h3>
+                        <p>UNESCO World Heritage temple in Bodh Gaya, where the Buddha attained enlightenment.</p>
+                    </div>
+                </a>
+                <a href="destination-nalanda.html" class="circuit-card">
+                    <img src="assets/images/nalanda-mahavihara.jpg" alt="Ruins of Nalanda Mahavihara" width="640" height="400" loading="lazy" decoding="async">
+                    <div class="circuit-card-body">
+                        <h3>Nalanda Mahavihara</h3>
+                        <p>UNESCO-listed ruins of the ancient monastic university in Magadha.</p>
+                    </div>
+                </a>
+                <a href="destination-kesariya.html" class="circuit-card">
+                    <img src="assets/images/kesariya-stupa.jpg" alt="Kesariya Stupa" width="640" height="400" loading="lazy" decoding="async">
+                    <div class="circuit-card-body">
+                        <h3>Kesariya Stupa</h3>
+                        <p>A vast terraced stupa in East Champaran on the Buddha's last journey.</p>
+                    </div>
+                </a>
+                <a href="destination-buddha-smriti.html" class="circuit-card">
+                    <img src="assets/images/buddha-smriti-park.jpg" alt="Buddha Smriti Park in Patna" width="640" height="400" loading="lazy" decoding="async">
+                    <div class="circuit-card-body">
+                        <h3>Buddha Smriti Park</h3>
+                        <p>Patna memorial park with a central stupa and relic chamber.</p>
+                    </div>
+                </a>
+                <a href="destination-vikramshila.html" class="circuit-card">
+                    <img src="assets/images/vikramshila.jpg" alt="Vikramshila ruins" width="640" height="400" loading="lazy" decoding="async">
+                    <div class="circuit-card-body">
+                        <h3>Vikramshila</h3>
+                        <p>Pala-era Buddhist university remains near Bhagalpur.</p>
+                    </div>
+                </a>
+                <a href="destination-mahabodhi.html" class="circuit-card">
+                    <img src="assets/images/mahabodhi-temple-2.jpg" alt="Mahabodhi Temple courtyard" width="640" height="400" loading="lazy" decoding="async">
+                    <div class="circuit-card-body">
+                        <h3>Sujata Stupa & Bodh Gaya</h3>
+                        <p>Nearby Bodh Gaya sites including Sujata Stupa and the temple precincts.</p>
+                    </div>
+                </a>
+            </div>
                     <h3>Bodh Gaya</h3>
                     <p>The sacred place where Lord Buddha attained enlightenment under the Bodhi tree. Home to the magnificent Mahabodhi Temple, a UNESCO World Heritage Site.</p>
                 </a>
@@ -280,14 +199,15 @@
                 </div>
             </div>
 
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="index.html" class="back-button">← Back to Home</a>
+            <div class="section-title" style="margin-top: 2rem;">
+                <a href="index.html" class="back-button">Back to Home</a>
             </div>
         </div>
     </section>
 
+    </main>
     <!-- Footer -->
-    <footer style="background: #264653; color: white; padding: 2rem 0; text-align: center;">
+    <footer>
         <div class="container">
             <p>Explore Bihar</p>
             <p style="margin-top: 0.5rem; font-size: 0.9rem;">A travel guide for visitors to Bihar</p>

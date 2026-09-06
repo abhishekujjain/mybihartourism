@@ -1,712 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plan a trip through Bihar: Mahabodhi Temple, Nalanda, Barabar Caves, Rohtasgarh Fort, Valmiki Tiger Reserve, and the Buddhist, Ramayan, Sikh, and eco circuits.">
-    <meta name="keywords" content="Bihar tourism, Bihar travel, Mahabodhi Temple, Nalanda, Buddhist Circuit, India tourism, Bihar destinations, Patna tourism, Gaya tourism, Bihar heritage sites">
+    <meta name="description" content="Plan a trip to Bihar: Mahabodhi Temple, Nalanda, Barabar Caves, Rohtasgarh Fort, Valmiki Tiger Reserve, and Buddhist, Ramayan, Sikh, and eco circuits.">
     <meta name="author" content="Explore Bihar">
-    <meta name="robots" content="index, follow">
-    <meta property="og:title" content="Explore Bihar - Land of Ancient Heritage & Spiritual Wisdom">
-    <meta property="og:description" content="Discover Bihar's rich cultural heritage, from the sacred Mahabodhi Temple to the ancient Nalanda University. Plan your perfect Bihar tourism experience.">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#2a3329">
+    <meta name="geo.region" content="IN-BR">
+    <meta name="geo.placename" content="Bihar, India">
+    <meta property="og:title" content="Explore Bihar | Heritage, Pilgrimage and Wildlife Travel Guide">
+    <meta property="og:description" content="Plan a trip to Bihar: Mahabodhi Temple, Nalanda, Barabar Caves, Rohtasgarh Fort, Valmiki Tiger Reserve, and Buddhist, Ramayan, Sikh, and eco circuits.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://explorebihar.com">
+    <meta property="og:url" content="https://www.mybihartourism.space/">
+    <meta property="og:image" content="https://www.mybihartourism.space/assets/images/hero-home.jpg">
+    <meta property="og:image:alt" content="Heritage and pilgrimage travel in Bihar">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Explore Bihar">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Explore Bihar - Land of Ancient Heritage & Spiritual Wisdom">
-    <meta name="twitter:description" content="Discover Bihar's rich cultural heritage, from the sacred Mahabodhi Temple to the ancient Nalanda University.">
-    <title>Explore Bihar - Land of Ancient Heritage & Spiritual Wisdom</title>
+    <meta name="twitter:title" content="Explore Bihar | Heritage, Pilgrimage and Wildlife Travel Guide">
+    <meta name="twitter:description" content="Plan a trip to Bihar: Mahabodhi Temple, Nalanda, Barabar Caves, Rohtasgarh Fort, Valmiki Tiger Reserve, and Buddhist, Ramayan, Sikh, and eco circuits.">
+    <meta name="twitter:image" content="https://www.mybihartourism.space/assets/images/hero-home.jpg">
+    <title>Explore Bihar | Heritage, Pilgrimage and Wildlife Travel Guide</title>
     <link rel="icon" href="assets/images/logo.jpg" type="image/jpeg">
-    <link rel="canonical" href="https://explorebihar.com">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary-color: #e63946;
-            --secondary-color: #f4a261;
-            --accent-color: #2a9d8f;
-            --dark-color: #264653;
-            --light-color: #f8f9fa;
-            --gradient-1: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-            --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f8f9fa;
-            overflow-x: hidden;
-        }
-
-        /* Header */
-        header {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.95), rgba(118, 75, 162, 0.95));
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-            transition: all 0.3s ease;
-        }
-
-        header.scrolled {
-            background: rgba(102, 126, 234, 0.98);
-            padding: 0.5rem 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        .nav-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            text-decoration: none;
-            color: white;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .logo img {
-            height: 52px;
-            width: 52px;
-            object-fit: cover;
-            border-radius: 12px;
-            background: #f6f0e4;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        header.scrolled .logo img {
-            height: 40px;
-            width: 40px;
-        }
-
-        .logo span {
-            background: linear-gradient(135deg, #f4a261, #e76f51);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: all 0.3s ease;
-            position: relative;
-            padding: 0.5rem 0;
-        }
-
-        nav a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #f4a261;
-            transition: width 0.3s ease;
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        /* Hero Section */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)),
-                        url('assets/images/hero-home.jpg') center/cover;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: white;
-            padding-top: 80px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: radial-gradient(circle at 20% 50%, rgba(244, 162, 97, 0.3) 0%, transparent 50%);
-            animation: pulse 4s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 0.3; transform: scale(1); }
-            50% { opacity: 0.6; transform: scale(1.1); }
-        }
-
-        .hero-content {
-            z-index: 1;
-            max-width: 800px;
-            padding: 2rem;
-            animation: fadeInUp 1s ease-out;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
+    <link rel="apple-touch-icon" href="assets/images/logo.jpg">
+    <link rel="canonical" href="https://www.mybihartourism.space/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Explore Bihar",
+          "url": "https://www.mybihartourism.space/",
+          "description": "Plan a trip to Bihar: Mahabodhi Temple, Nalanda, Barabar Caves, Rohtasgarh Fort, Valmiki Tiger Reserve, and Buddhist, Ramayan, Sikh, and eco circuits.",
+          "inLanguage": "en-IN",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Explore Bihar",
+            "url": "https://www.mybihartourism.space/",
+            "logo": "https://www.mybihartourism.space/assets/images/logo.jpg"
+          }
+        },
+        {
+          "@type": "TouristDestination",
+          "name": "Bihar",
+          "description": "Plan a trip to Bihar: Mahabodhi Temple, Nalanda, Barabar Caves, Rohtasgarh Fort, Valmiki Tiger Reserve, and Buddhist, Ramayan, Sikh, and eco circuits.",
+          "url": "https://www.mybihartourism.space/",
+          "image": "https://www.mybihartourism.space/assets/images/hero-home.jpg",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Bihar",
+            "addressCountry": "IN"
+          }
+        },
+        {
+          "@type": "ItemList",
+          "name": "Featured destinations in Bihar",
+          "numberOfItems": 12,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "url": "https://www.mybihartourism.space/destination-mahabodhi.html",
+              "name": "Mahabodhi Temple"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "url": "https://www.mybihartourism.space/destination-vishnupad.html",
+              "name": "Vishnupad Temple"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "url": "https://www.mybihartourism.space/destination-kesariya.html",
+              "name": "Kesariya Stupa"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "url": "https://www.mybihartourism.space/destination-valmiki.html",
+              "name": "Valmiki Tiger Reserve"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "url": "https://www.mybihartourism.space/destination-buddha-smriti.html",
+              "name": "Buddha Smriti Park"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "url": "https://www.mybihartourism.space/destination-mundeshwari.html",
+              "name": "Mundeshwari Devi Temple"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "url": "https://www.mybihartourism.space/destination-nalanda.html",
+              "name": "Nalanda Mahavihara"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "url": "https://www.mybihartourism.space/destination-harmandir.html",
+              "name": "Takhat Sri Harmandir Ji"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "url": "https://www.mybihartourism.space/destination-golghar.html",
+              "name": "Golghar"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "url": "https://www.mybihartourism.space/destination-vikramshila.html",
+              "name": "Ruins of Vikramshila"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "url": "https://www.mybihartourism.space/destination-barabar.html",
+              "name": "Barabar Caves"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "url": "https://www.mybihartourism.space/destination-rohtasgarh.html",
+              "name": "Rohtasgarh Fort"
             }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 1rem;
-            font-weight: 800;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .hero p {
-            font-size: 1.3rem;
-            margin-bottom: 2rem;
-            opacity: 0.9;
-        }
-
-        .cta-button {
-            display: inline-block;
-            padding: 1rem 2.5rem;
-            background: linear-gradient(135deg, #f4a261, #e76f51);
-            color: white;
-            text-decoration: none;
-            border-radius: 50px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(244, 162, 97, 0.4);
-            border: none;
-            cursor: pointer;
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(244, 162, 97, 0.6);
-        }
-
-        /* Filter Section */
-        .filter-section {
-            background: white;
-            padding: 2rem 0;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 70px;
-            z-index: 999;
-        }
-
-        .filter-container {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            flex-wrap: wrap;
-        }
-
-        .filter-btn {
-            padding: 0.8rem 1.5rem;
-            border: 2px solid #667eea;
-            background: white;
-            color: #667eea;
-            border-radius: 25px;
-            cursor: pointer;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-
-        .filter-btn:hover, .filter-btn.active {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            border-color: transparent;
-        }
-
-        /* Destinations Section */
-        .destinations {
-            padding: 4rem 0;
-            background: linear-gradient(180deg, #f8f9fa 0%, #e9ecef 100%);
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .section-title h2 {
-            font-size: 2.5rem;
-            color: #264653;
-            margin-bottom: 0.5rem;
-            position: relative;
-            display: inline-block;
-        }
-
-        .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 4px;
-            background: linear-gradient(135deg, #f4a261, #e76f51);
-            border-radius: 2px;
-        }
-
-        .section-title p {
-            color: #666;
-            font-size: 1.1rem;
-        }
-
-        .destinations-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .destination-card {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            transition: all 0.4s ease;
-            cursor: pointer;
-            position: relative;
-            text-decoration: none;
-            display: block;
-        }
-
-        .destination-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        .destination-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 5px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            z-index: 2;
-        }
-
-        .card-image {
-            height: 200px;
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .card-image::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(45deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3));
-            transition: all 0.3s ease;
-        }
-
-        .destination-card:hover .card-image::after {
-            background: linear-gradient(45deg, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5));
-        }
-
-        .card-badge {
-            position: absolute;
-            top: 15px;
-            right: 15px;
-            background: linear-gradient(135deg, #f4a261, #e76f51);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            z-index: 3;
-        }
-
-        .card-content {
-            padding: 1.5rem;
-        }
-
-        .card-content h3 {
-            color: #264653;
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-        }
-
-        .card-content p {
-            color: #666;
-            font-size: 0.95rem;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-
-        .card-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 1rem;
-            border-top: 1px solid #eee;
-        }
-
-        .card-tags {
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
-        }
-
-        .tag {
-            background: #f0f0f0;
-            color: #666;
-            padding: 0.3rem 0.8rem;
-            border-radius: 15px;
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
-
-        .explore-btn {
-            color: #667eea;
-            text-decoration: none;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            transition: all 0.3s ease;
-        }
-
-        .explore-btn:hover {
-            color: #764ba2;
-            gap: 10px;
-        }
-
-        /* Featured Section */
-        .featured {
-            padding: 4rem 0;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-        }
-
-        .featured-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-
-        .featured-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 2rem;
-            text-align: center;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            text-decoration: none;
-            color: white;
-            display: block;
-        }
-
-        .featured-card:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-5px);
-        }
-
-        .featured-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .featured-card h3 {
-            margin-bottom: 0.5rem;
-            font-size: 1.3rem;
-        }
-
-        .featured-card p {
-            opacity: 0.9;
-            font-size: 0.95rem;
-        }
-
-        /* Stats Section */
-        .stats {
-            padding: 3rem 0;
-            background: white;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            text-align: center;
-        }
-
-        .stat-item {
-            padding: 2rem;
-        }
-
-        .stat-number {
-            font-size: 3rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .stat-label {
-            color: #666;
-            font-size: 1.1rem;
-            margin-top: 0.5rem;
-        }
-
-        /* Contact Section */
-        .contact {
-            padding: 4rem 0;
-            background: linear-gradient(180deg, #e9ecef 0%, #f8f9fa 100%);
-        }
-
-        .contact-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 3rem;
-            margin-top: 2rem;
-        }
-
-        .contact-info {
-            background: white;
-            padding: 2rem;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-info h3 {
-            color: #264653;
-            margin-bottom: 1.5rem;
-            font-size: 1.5rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-            color: #666;
-        }
-
-        .contact-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-size: 1.2rem;
-        }
-
-        .contact-item a {
-            color: #667eea;
-            text-decoration: none;
-        }
-
-        .contact-item a:hover {
-            color: #764ba2;
-        }
-
-        /* Footer */
-        footer {
-            background: #264653;
-            color: white;
-            padding: 3rem 0 1rem;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-section h4 {
-            margin-bottom: 1rem;
-            font-size: 1.2rem;
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        .footer-section a {
-            color: rgba(255, 255, 255, 0.7);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-section a:hover {
-            color: #f4a261;
-        }
-
-        .footer-bottom {
-            text-align: center;
-            padding-top: 2rem;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: rgba(255, 255, 255, 0.6);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            .nav-container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-
-            nav ul {
-                gap: 1rem;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .destinations-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .filter-container {
-                gap: 0.5rem;
-            }
-
-            .filter-btn {
-                padding: 0.6rem 1rem;
-                font-size: 0.9rem;
-            }
-        }
-
-        /* Animations */
-        @keyframes slideIn {
-            from {
-                opacity: 0;
-                transform: translateX(-50px);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-
-        .destination-card {
-            animation: slideIn 0.6s ease-out forwards;
-        }
-
-        .destination-card:nth-child(1) { animation-delay: 0.1s; }
-        .destination-card:nth-child(2) { animation-delay: 0.2s; }
-        .destination-card:nth-child(3) { animation-delay: 0.3s; }
-        .destination-card:nth-child(4) { animation-delay: 0.4s; }
-        .destination-card:nth-child(5) { animation-delay: 0.5s; }
-        .destination-card:nth-child(6) { animation-delay: 0.6s; }
-
-        /* Loading Animation */
-        .loading {
-            text-align: center;
-            padding: 2rem;
-            color: #667eea;
-            font-size: 1.2rem;
-        }
-
-        .loading::after {
-            content: '...';
-            animation: dots 1.5s steps(4, end) infinite;
-        }
-
-        @keyframes dots {
-            0%, 20% { content: '.'; }
-            40% { content: '..'; }
-            60%, 100% { content: '...'; }
-        }
-
-        /* Scroll to top button */
-        .scroll-top {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-            transition: all 0.3s ease;
-            z-index: 1000;
-        }
-
-        .scroll-top:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-        }
-
-        .scroll-top.show {
-            display: flex;
-        }
-    </style>
+          ]
+        }
+      ]
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/theme.css">
 </head>
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <!-- Header -->
     <header id="header">
         <div class="container">
             <div class="nav-container">
                 <a href="index.html" class="logo">
-                    <img src="assets/images/logo.jpg" alt="Explore Bihar logo">
+                    <img src="assets/images/logo.jpg" alt="Explore Bihar travel guide logo" width="48" height="48">
                     <span>Explore Bihar</span>
                 </a>
-                <nav>
+                <nav aria-label="Primary">
                     <ul>
                         <li><a href="#destinations">Destinations</a></li>
                         <li><a href="#circuits">Circuits</a></li>
@@ -718,9 +163,11 @@
         </div>
     </header>
 
+    <main id="main">
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero hero-home" style="background-image: url('assets/images/hero-home.jpg')">
         <div class="hero-content">
+            <p class="eyebrow">Heritage · Nature · Pilgrimage</p>
             <h1>Discover the Heart of Bihar</h1>
             <p>Walk the Buddhist circuit, explore Mauryan caves and hill forts, and plan a journey through Bihar's temples, universities, and wildlife reserves.</p>
             <a href="#destinations" class="cta-button">Start Your Journey</a>
@@ -731,12 +178,12 @@
     <section class="filter-section">
         <div class="container">
             <div class="filter-container">
-                <button class="filter-btn active" data-filter="all">All Destinations</button>
-                <button class="filter-btn" data-filter="popular">Popular</button>
-                <button class="filter-btn" data-filter="heritage">Heritage</button>
-                <button class="filter-btn" data-filter="wildlife">Wildlife</button>
-                <button class="filter-btn" data-filter="spiritual">Spiritual</button>
-                <button class="filter-btn" data-filter="cultural">Cultural</button>
+                <button type="button" class="filter-btn active" data-filter="all">All Destinations</button>
+                <button type="button" class="filter-btn" data-filter="popular">Popular</button>
+                <button type="button" class="filter-btn" data-filter="heritage">Heritage</button>
+                <button type="button" class="filter-btn" data-filter="wildlife">Wildlife</button>
+                <button type="button" class="filter-btn" data-filter="spiritual">Spiritual</button>
+                <button type="button" class="filter-btn" data-filter="cultural">Cultural</button>
             </div>
         </div>
     </section>
@@ -749,7 +196,198 @@
                 <p>Explore the most iconic tourism destinations in Bihar</p>
             </div>
             <div class="destinations-grid" id="destinationsGrid">
-                <!-- Destination cards will be dynamically loaded -->
+                    <a href="destination-mahabodhi.html" class="destination-card" data-categories="popular spiritual heritage">
+                        <div class="card-image">
+                            <img src="assets/images/mahabodhi-temple.jpg" alt="Mahabodhi Temple in Bodh Gaya, Bihar" width="640" height="400" loading="eager" fetchpriority="high" decoding="async">
+                            <span class="card-badge">UNESCO Heritage</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Mahabodhi Temple</h3>
+                            <p>UNESCO World Heritage temple in Bodh Gaya, marking the place where the Buddha attained enlightenment under the Bodhi tree.</p>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <span class="tag">Popular</span><span class="tag">Spiritual</span><span class="tag">Heritage</span>
+                                </div>
+                                <span class="explore-btn">Explore</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="destination-vishnupad.html" class="destination-card" data-categories="popular spiritual">
+                        <div class="card-image">
+                            <img src="assets/images/vishnupad-temple.jpg" alt="Vishnupad Temple on the Phalgu River in Gaya" width="640" height="400" loading="lazy" decoding="async">
+                            <span class="card-badge">Sacred Site</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Vishnupad Temple</h3>
+                            <p>A major Hindu shrine on the Phalgu River in Gaya, visited by pilgrims for pind daan and ancestral rites.</p>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <span class="tag">Popular</span><span class="tag">Spiritual</span>
+                                </div>
+                                <span class="explore-btn">Explore</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="destination-kesariya.html" class="destination-card" data-categories="popular heritage spiritual">
+                        <div class="card-image">
+                            <img src="assets/images/kesariya-stupa.jpg" alt="Kesariya Stupa in East Champaran, Bihar" width="640" height="400" loading="lazy" decoding="async">
+                            <span class="card-badge">Ancient Stupa</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Kesariya Stupa</h3>
+                            <p>A vast terraced Buddhist stupa in East Champaran, among the largest of its kind, linked to the Buddha's last journey.</p>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <span class="tag">Popular</span><span class="tag">Heritage</span><span class="tag">Spiritual</span>
+                                </div>
+                                <span class="explore-btn">Explore</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="destination-valmiki.html" class="destination-card" data-categories="wildlife popular">
+                        <div class="card-image">
+                            <img src="assets/images/valmiki-tiger-reserve.jpg" alt="Forest landscape at Valmiki Tiger Reserve" width="640" height="400" loading="lazy" decoding="async">
+                            <span class="card-badge">Wildlife Sanctuary</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Valmiki Tiger Reserve</h3>
+                            <p>Bihar's only tiger reserve, in West Champaran, with sal forests, the Gandak river, and rich Himalayan foothill wildlife.</p>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <span class="tag">Wildlife</span><span class="tag">Popular</span>
+                                </div>
+                                <span class="explore-btn">Explore</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="destination-buddha-smriti.html" class="destination-card" data-categories="popular cultural spiritual">
+                        <div class="card-image">
+                            <img src="assets/images/buddha-smriti-park.jpg" alt="Buddha Smriti Park in Patna" width="640" height="400" loading="lazy" decoding="async">
+                            <span class="card-badge">Patna Landmark</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Buddha Smriti Park</h3>
+                            <p>A contemporary memorial park in Patna with a central stupa, relic chamber, and quiet gardens for reflection.</p>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <span class="tag">Popular</span><span class="tag">Cultural</span><span class="tag">Spiritual</span>
+                                </div>
+                                <span class="explore-btn">Explore</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="destination-mundeshwari.html" class="destination-card" data-categories="heritage spiritual">
+                        <div class="card-image">
+                            <img src="assets/images/mundeshwari-devi-temple.jpg" alt="Mundeshwari Devi Temple in Kaimur" width="640" height="400" loading="lazy" decoding="async">
+                            <span class="card-badge">Ancient Temple</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Mundeshwari Devi Temple</h3>
+                            <p>An octagonal hill shrine in Kaimur, among India's oldest continuously worshipped temples, dedicated to Shiva and Shakti.</p>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <span class="tag">Heritage</span><span class="tag">Spiritual</span>
+                                </div>
+                                <span class="explore-btn">Explore</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="destination-nalanda.html" class="destination-card" data-categories="heritage educational popular">
+                        <div class="card-image">
+                            <img src="assets/images/nalanda-mahavihara.jpg" alt="Ruins of Nalanda Mahavihara" width="640" height="400" loading="lazy" decoding="async">
+                            <span class="card-badge">UNESCO Heritage</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Nalanda Mahavihara</h3>
+                            <p>UNESCO-listed ruins of the great monastic university that drew scholars from across Asia for centuries.</p>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <span class="tag">Heritage</span><span class="tag">Educational</span><span class="tag">Popular</span>
+                                </div>
+                                <span class="explore-btn">Explore</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="destination-harmandir.html" class="destination-card" data-categories="spiritual heritage">
+                        <div class="card-image">
+                            <img src="assets/images/harmandir-sahib.jpg" alt="Takhat Sri Harmandir Ji, Patna Sahib" width="640" height="400" loading="lazy" decoding="async">
+                            <span class="card-badge">Sikh Pilgrimage</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Takhat Sri Harmandir Ji</h3>
+                            <p>Patna Sahib, one of the five Takhts of Sikhism, marks the birthplace of Guru Gobind Singh.</p>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <span class="tag">Spiritual</span><span class="tag">Heritage</span>
+                                </div>
+                                <span class="explore-btn">Explore</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="destination-golghar.html" class="destination-card" data-categories="heritage popular">
+                        <div class="card-image">
+                            <img src="assets/images/golghar.jpg" alt="Golghar granary in Patna" width="640" height="400" loading="lazy" decoding="async">
+                            <span class="card-badge">Historic Monument</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Golghar</h3>
+                            <p>A beehive-shaped granary built in 1786 after the Bengal famine, with a spiral walkway and views of Patna and the Ganga.</p>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <span class="tag">Heritage</span><span class="tag">Popular</span>
+                                </div>
+                                <span class="explore-btn">Explore</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="destination-vikramshila.html" class="destination-card" data-categories="heritage educational spiritual">
+                        <div class="card-image">
+                            <img src="assets/images/vikramshila.jpg" alt="Archaeological ruins of Vikramshila" width="640" height="400" loading="lazy" decoding="async">
+                            <span class="card-badge">Ancient University</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Ruins of Vikramshila</h3>
+                            <p>Excavated remains of a Pala-era Buddhist university near Bhagalpur, once a major centre of Vajrayana learning.</p>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <span class="tag">Heritage</span><span class="tag">Educational</span><span class="tag">Spiritual</span>
+                                </div>
+                                <span class="explore-btn">Explore</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="destination-barabar.html" class="destination-card" data-categories="heritage historical">
+                        <div class="card-image">
+                            <img src="assets/images/barabar-caves.jpg" alt="Rock-cut Barabar Caves in Jehanabad" width="640" height="400" loading="lazy" decoding="async">
+                            <span class="card-badge">Mauryan Caves</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Barabar Caves</h3>
+                            <p>India's oldest surviving rock-cut caves, in the Barabar Hills of Jehanabad, with Mauryan polish and Ashokan inscriptions.</p>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <span class="tag">Heritage</span><span class="tag">Historical</span>
+                                </div>
+                                <span class="explore-btn">Explore</span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="destination-rohtasgarh.html" class="destination-card" data-categories="heritage historical">
+                        <div class="card-image">
+                            <img src="assets/images/rohtasgarh-fort.jpg" alt="Hilltop ramparts of Rohtasgarh Fort" width="640" height="400" loading="lazy" decoding="async">
+                            <span class="card-badge">Hill Fort</span>
+                        </div>
+                        <div class="card-content">
+                            <h3>Rohtasgarh Fort</h3>
+                            <p>A vast hill fort in Rohtas district, held by Sher Shah Suri and later Mughal governors, with gates, palaces, and forested ramparts.</p>
+                            <div class="card-footer">
+                                <div class="card-tags">
+                                    <span class="tag">Heritage</span><span class="tag">Historical</span>
+                                </div>
+                                <span class="explore-btn">Explore</span>
+                            </div>
+                        </div>
+                    </a>
             </div>
         </div>
     </section>
@@ -758,29 +396,37 @@
     <section class="featured" id="circuits">
         <div class="container">
             <div class="section-title">
-                <h2 style="color: white;">Tourism Circuits</h2>
-                <p style="color: rgba(255,255,255,0.9);">Explore themed travel experiences across Bihar</p>
+                <h2>Tourism Circuits</h2>
+                <p>Explore themed travel experiences across Bihar</p>
             </div>
             <div class="featured-grid">
-                <a href="circuit-buddhist.html" class="featured-card">
-                    <div class="featured-icon">🙏</div>
-                    <h3>Buddhist Circuit</h3>
-                    <p>Follow the footsteps of Lord Buddha through sacred sites and ancient monasteries.</p>
+                <a href="circuit-buddhist.html" class="featured-card with-photo">
+                    <img src="assets/images/mahabodhi-temple.jpg" alt="Mahabodhi Temple on the Buddhist Circuit" width="640" height="400" loading="lazy" decoding="async">
+                    <div class="featured-card-body">
+                        <h3>Buddhist Circuit</h3>
+                        <p>Bodh Gaya, Nalanda, Kesariya, Vikramshila, and Buddha Smriti Park.</p>
+                    </div>
                 </a>
-                <a href="circuit-eco.html" class="featured-card">
-                    <div class="featured-icon">🌿</div>
-                    <h3>Eco Circuit</h3>
-                    <p>Discover Bihar's natural beauty, wildlife sanctuaries, and pristine landscapes.</p>
+                <a href="circuit-eco.html" class="featured-card with-photo">
+                    <img src="assets/images/valmiki-tiger-reserve.jpg" alt="Valmiki Tiger Reserve on the Eco Circuit" width="640" height="400" loading="lazy" decoding="async">
+                    <div class="featured-card-body">
+                        <h3>Eco Circuit</h3>
+                        <p>Valmiki forests, Barabar Hills, and the river country around Vikramshila.</p>
+                    </div>
                 </a>
-                <a href="circuit-ramayan.html" class="featured-card">
-                    <div class="featured-icon">📖</div>
-                    <h3>Ramayan Circuit</h3>
-                    <p>Journey through the legendary lands associated with the epic Ramayana.</p>
+                <a href="circuit-ramayan.html" class="featured-card with-photo">
+                    <img src="assets/images/vishnupad-temple.jpg" alt="Vishnupad Temple on the Ramayan Circuit" width="640" height="400" loading="lazy" decoding="async">
+                    <div class="featured-card-body">
+                        <h3>Ramayan Circuit</h3>
+                        <p>Gaya, Sitamarhi, and Darbhanga sites tied to the Ramayana.</p>
+                    </div>
                 </a>
-                <a href="circuit-sikh.html" class="featured-card">
-                    <div class="featured-icon">⚔️</div>
-                    <h3>Sikh Circuit</h3>
-                    <p>Explore important Sikh pilgrimage sites and historical gurdwaras.</p>
+                <a href="circuit-sikh.html" class="featured-card with-photo">
+                    <img src="assets/images/harmandir-sahib.jpg" alt="Patna Sahib on the Sikh Circuit" width="640" height="400" loading="lazy" decoding="async">
+                    <div class="featured-card-body">
+                        <h3>Sikh Circuit</h3>
+                        <p>Takhat Sri Harmandir Ji and the Patna gurdwaras of Guru Gobind Singh.</p>
+                    </div>
                 </a>
             </div>
         </div>
@@ -818,21 +464,27 @@
                 <p>Touch, See, and Taste the essence of Bihar</p>
             </div>
             <div class="featured-grid">
-                <div class="featured-card" style="background: white; color: #333;">
-                    <div class="featured-icon">✋</div>
-                    <h3>Touch</h3>
-                    <p>Feel the ancient textures of historical monuments and traditional crafts.</p>
-                </div>
-                <div class="featured-card" style="background: white; color: #333;">
-                    <div class="featured-icon">👁️</div>
-                    <h3>See</h3>
-                    <p>Witness breathtaking architecture, vibrant festivals, and natural wonders.</p>
-                </div>
-                <div class="featured-card" style="background: white; color: #333;">
-                    <div class="featured-icon">🍽️</div>
-                    <h3>Taste</h3>
-                    <p>Savor authentic Bihari cuisine and local delicacies.</p>
-                </div>
+                <a href="experience-touch.html" class="featured-card light with-photo">
+                    <img src="assets/images/logo.jpg" alt="Madhubani-style art from Bihar" width="640" height="400" loading="lazy" decoding="async">
+                    <div class="featured-card-body">
+                        <h3>Touch</h3>
+                        <p>Madhubani painting, Tikuli craft, and the handmade arts of Bihar.</p>
+                    </div>
+                </a>
+                <a href="experience-see.html" class="featured-card light with-photo">
+                    <img src="assets/images/golghar.jpg" alt="Festive public spaces of Patna and Bihar" width="640" height="400" loading="lazy" decoding="async">
+                    <div class="featured-card-body">
+                        <h3>See</h3>
+                        <p>Sonepur Mela, Shrawani Mela, and Chhath Puja by the rivers.</p>
+                    </div>
+                </a>
+                <a href="experience-taste.html" class="featured-card light with-photo">
+                    <img src="assets/images/harmandir-sahib.jpg" alt="Community kitchens and food culture of Bihar" width="640" height="400" loading="lazy" decoding="async">
+                    <div class="featured-card-body">
+                        <h3>Taste</h3>
+                        <p>Litti chokha, Maner laddoo, Soan papdi, and GI foods of the state.</p>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
@@ -851,7 +503,7 @@
                         <div class="contact-icon">✉️</div>
                         <div>
                             <strong>Email:</strong><br>
-                            <a href="mailto:hello@explorebihar.com">hello@explorebihar.com</a>
+                            <a href="mailto:intelligentmindforyou@gmail.com">intelligentmindforyou@gmail.com</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -872,17 +524,20 @@
                 <div class="contact-info">
                     <h3>Quick Links</h3>
                     <ul style="list-style: none; line-height: 2;">
-                        <li><a href="#destinations" style="color: #667eea; text-decoration: none;">→ Destinations</a></li>
-                        <li><a href="#circuits" style="color: #667eea; text-decoration: none;">→ Tourism Circuits</a></li>
-                        <li><a href="circuit-buddhist.html" style="color: #667eea; text-decoration: none;">→ Buddhist Circuit</a></li>
-                        <li><a href="circuit-eco.html" style="color: #667eea; text-decoration: none;">→ Eco Circuit</a></li>
-                        <li><a href="#experiences" style="color: #667eea; text-decoration: none;">→ Experiences</a></li>
+                        <li><a href="#destinations">→ Destinations</a></li>
+                        <li><a href="#circuits">→ Tourism Circuits</a></li>
+                        <li><a href="circuit-buddhist.html">→ Buddhist Circuit</a></li>
+                        <li><a href="circuit-eco.html">→ Eco Circuit</a></li>
+                        <li><a href="experience-touch.html">→ Touch</a></li>
+                        <li><a href="experience-see.html">→ See</a></li>
+                        <li><a href="experience-taste.html">→ Taste</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
+    </main>
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -915,13 +570,8 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">YouTube</a></li>
-                    </ul>
+                    <h4>Explore Bihar</h4>
+                    <p>A travel guide to temples, universities, forts, and wildlife across Bihar.</p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -935,149 +585,22 @@
     <button class="scroll-top" id="scrollTop">↑</button>
 
     <script>
-        // Destination Data with images and page links
-        const destinations = [
-            {
-                name: "Mahabodhi Temple",
-                description: "UNESCO World Heritage temple in Bodh Gaya, marking the place where the Buddha attained enlightenment under the Bodhi tree.",
-                category: ["popular", "spiritual", "heritage"],
-                badge: "UNESCO Heritage",
-                image: "assets/images/mahabodhi-temple.jpg",
-                page: "destination-mahabodhi.html"
-            },
-            {
-                name: "Vishnupad Temple",
-                description: "A major Hindu shrine on the Phalgu River in Gaya, visited by pilgrims for pind daan and ancestral rites.",
-                category: ["popular", "spiritual"],
-                badge: "Sacred Site",
-                image: "assets/images/vishnupad-temple.jpg",
-                page: "destination-vishnupad.html"
-            },
-            {
-                name: "Kesariya Stupa",
-                description: "A vast terraced Buddhist stupa in East Champaran, among the largest of its kind, linked to the Buddha's last journey.",
-                category: ["popular", "heritage", "spiritual"],
-                badge: "Ancient Stupa",
-                image: "assets/images/kesariya-stupa.jpg",
-                page: "destination-kesariya.html"
-            },
-            {
-                name: "Valmiki Tiger Reserve",
-                description: "Bihar's only tiger reserve, in West Champaran, with sal forests, the Gandak river, and rich Himalayan foothill wildlife.",
-                category: ["wildlife", "popular"],
-                badge: "Wildlife Sanctuary",
-                image: "assets/images/valmiki-tiger-reserve.jpg",
-                page: "destination-valmiki.html"
-            },
-            {
-                name: "Buddha Smriti Park",
-                description: "A contemporary memorial park in Patna with a central stupa, relic chamber, and quiet gardens for reflection.",
-                category: ["popular", "cultural", "spiritual"],
-                badge: "Patna Landmark",
-                image: "assets/images/buddha-smriti-park.jpg",
-                page: "destination-buddha-smriti.html"
-            },
-            {
-                name: "Mundeshwari Devi Temple",
-                description: "An octagonal hill shrine in Kaimur, among India's oldest continuously worshipped temples, dedicated to Shiva and Shakti.",
-                category: ["heritage", "spiritual"],
-                badge: "Ancient Temple",
-                image: "assets/images/mundeshwari-devi-temple.jpg",
-                page: "destination-mundeshwari.html"
-            },
-            {
-                name: "Nalanda Mahavihara",
-                description: "UNESCO-listed ruins of the great monastic university that drew scholars from across Asia for centuries.",
-                category: ["heritage", "educational", "popular"],
-                badge: "UNESCO Heritage",
-                image: "assets/images/nalanda-mahavihara.jpg",
-                page: "destination-nalanda.html"
-            },
-            {
-                name: "Takhat Sri Harmandir Ji",
-                description: "Patna Sahib, one of the five Takhts of Sikhism, marks the birthplace of Guru Gobind Singh.",
-                category: ["spiritual", "heritage"],
-                badge: "Sikh Pilgrimage",
-                image: "assets/images/harmandir-sahib.jpg",
-                page: "destination-harmandir.html"
-            },
-            {
-                name: "Golghar",
-                description: "A beehive-shaped granary built in 1786 after the Bengal famine, with a spiral walkway and views of Patna and the Ganga.",
-                category: ["heritage", "popular"],
-                badge: "Historic Monument",
-                image: "assets/images/golghar.jpg",
-                page: "destination-golghar.html"
-            },
-            {
-                name: "Ruins of Vikramshila",
-                description: "Excavated remains of a Pala-era Buddhist university near Bhagalpur, once a major centre of Vajrayana learning.",
-                category: ["heritage", "educational", "spiritual"],
-                badge: "Ancient University",
-                image: "assets/images/vikramshila.jpg",
-                page: "destination-vikramshila.html"
-            },
-            {
-                name: "Barabar Caves",
-                description: "India's oldest surviving rock-cut caves, in the Barabar Hills of Jehanabad, with Mauryan polish and Ashokan inscriptions.",
-                category: ["heritage", "historical"],
-                badge: "Mauryan Caves",
-                image: "assets/images/barabar-caves.jpg",
-                page: "destination-barabar.html"
-            },
-            {
-                name: "Rohtasgarh Fort",
-                description: "A vast hill fort in Rohtas district, held by Sher Shah Suri and later Mughal governors, with gates, palaces, and forested ramparts.",
-                category: ["heritage", "historical"],
-                badge: "Hill Fort",
-                image: "assets/images/rohtasgarh-fort.jpg",
-                page: "destination-rohtasgarh.html"
-            }
-        ];
-
-        // DOM Elements
-        const destinationsGrid = document.getElementById('destinationsGrid');
         const filterBtns = document.querySelectorAll('.filter-btn');
         const header = document.getElementById('header');
         const scrollTopBtn = document.getElementById('scrollTop');
 
-        // Render Destinations
-        function renderDestinations(filter = 'all') {
-            destinationsGrid.innerHTML = '<div class="loading">Loading destinations</div>';
-            
-            setTimeout(() => {
-                const filteredDestinations = filter === 'all' 
-                    ? destinations 
-                    : destinations.filter(dest => dest.category.includes(filter));
-
-                destinationsGrid.innerHTML = filteredDestinations.map(dest => `
-                    <a href="${dest.page}" class="destination-card" data-categories="${dest.category.join(' ')}">
-                        <div class="card-image" style="background-image: url('${dest.image}');">
-                            <span class="card-badge">${dest.badge}</span>
-                        </div>
-                        <div class="card-content">
-                            <h3>${dest.name}</h3>
-                            <p>${dest.description}</p>
-                            <div class="card-footer">
-                                <div class="card-tags">
-                                    ${dest.category.map(cat => `<span class="tag">${cat.charAt(0).toUpperCase() + cat.slice(1)}</span>`).join('')}
-                                </div>
-                                <span class="explore-btn">
-                                    Explore →
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-                `).join('');
-            }, 500);
+        function filterDestinations(filter = 'all') {
+            document.querySelectorAll('#destinationsGrid .destination-card').forEach(card => {
+                const cats = (card.dataset.categories || '').split(/\s+/);
+                card.hidden = filter !== 'all' && !cats.includes(filter);
+            });
         }
 
-        // Filter Functionality
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 filterBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                renderDestinations(btn.dataset.filter);
+                filterDestinations(btn.dataset.filter);
             });
         });
 
@@ -1149,9 +672,6 @@
         }, { threshold: 0.5 });
 
         statsObserver.observe(statsSection);
-
-        // Initialize
-        renderDestinations();
     </script>
 </body>
 </html>
