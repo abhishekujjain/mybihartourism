@@ -393,6 +393,48 @@ nav a:hover::after {
     margin-top: 1.4rem;
 }
 
+.seo-lead {
+    max-width: 44rem;
+    margin: -1.25rem auto 2.5rem;
+    text-align: center;
+    color: var(--muted);
+    font-size: 1.05rem;
+}
+
+.faq-list {
+    max-width: 48rem;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+}
+
+.faq-list details {
+    background: var(--white);
+    border: 1px solid rgba(31, 42, 34, 0.08);
+    padding: 1rem 1.25rem;
+}
+
+.faq-list summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--ink);
+}
+
+.faq-list details p {
+    margin-top: 0.75rem;
+    color: var(--muted);
+}
+
+.taste-copy {
+    max-width: 46rem;
+    margin: 0 auto 2.25rem;
+    color: var(--muted);
+}
+
+.taste-copy p + p {
+    margin-top: 1rem;
+}
+
 .destinations-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
