@@ -1,27 +1,9 @@
 # Images Directory
 
-This directory should contain images sourced from the official Bihar tourism website: https://tourism.bihar.gov.in
+Local photos used on destination cards, galleries, and circuit heroes.
 
-## Recommended Image Sources
+## File naming
 
-Please download images from the official Bihar tourism website for the following destinations:
-
-1. **Mahabodhi Temple**: https://tourism.bihar.gov.in/en/destinations/gaya/mahabodhi-temple
-2. **Nalanda Mahavihara**: https://tourism.bihar.gov.in/en/destinations/nalanda/nalanda-ka-khandahar
-3. **Valmiki Tiger Reserve**: https://tourism.bihar.gov.in/en/destinations/west-champaran/valmiki-tiger-reserve
-4. **Vishnupad Temple**: https://tourism.bihar.gov.in/en/destinations/gaya/vishnupad-temple
-5. **Kesariya Stupa**: https://tourism.bihar.gov.in/en/destinations/east-champaran/kesariya-stupa
-6. **Buddha Smriti Park**: https://tourism.bihar.gov.in/en/destinations/patna/buddha-smriti-park
-7. **Mundeshwari Devi Temple**: https://tourism.bihar.gov.in/en/destinations/kaimur/mundeshwari-devi-temple
-8. **Takhat Sri Harmandir Ji**: https://tourism.bihar.gov.in/en/destinations/patna/takht-shri-harmandir-sahib
-9. **Golghar**: https://tourism.bihar.gov.in/en/destinations/patna/gol-ghar
-10. **Ruins of Vikramshila**: https://tourism.bihar.gov.in/en/destinations/bhagalpur/vikramshila
-11. **Barabar Caves**: https://tourism.bihar.gov.in/en/destinations/jehanabad/barabar-caves
-12. **Rohtasgarh Fort**: https://tourism.bihar.gov.in/en/destinations/rohtas/rohtasgarh-fort
-
-## File Naming Convention
-
-Use the following naming convention for images:
 - `mahabodhi-temple.jpg`
 - `nalanda-mahavihara.jpg`
 - `valmiki-tiger-reserve.jpg`
@@ -34,10 +16,6 @@ Use the following naming convention for images:
 - `vikramshila.jpg`
 - `barabar-caves.jpg`
 - `rohtasgarh-fort.jpg`
+- `hero-home.jpg`
 
-## Notes
-
-- Local JPEGs are used across the homepage, destination pages, and circuit heroes
-- Keep file names stable so HTML references do not break
-- Prefer additional views as `{name}-2.jpg`, `{name}-3.jpg`, `{name}-4.jpg`
-- Optimize new photos for the web before adding them
+Extra views use `{name}-2.jpg`, `{name}-3.jpg`, `{name}-4.jpg`. Keep these names stable so the HTML paths stay valid. Optimize new photos for the web before adding them.
