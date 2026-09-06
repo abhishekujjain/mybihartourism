@@ -152,13 +152,13 @@ header.scrolled .logo img {
     color: var(--cream);
 }
 
-nav ul {
+header nav ul {
     display: flex;
     list-style: none;
     gap: 2rem;
 }
 
-nav a {
+header nav a {
     color: var(--cream);
     text-decoration: none;
     font-weight: 400;
@@ -171,11 +171,11 @@ nav a {
     margin-left: 1.6rem;
 }
 
-nav ul a {
+header nav ul a {
     margin-left: 0;
 }
 
-nav a::after {
+header nav a::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -186,11 +186,11 @@ nav a::after {
     transition: width 0.3s ease;
 }
 
-nav a:hover {
+header nav a:hover {
     color: var(--gold-light);
 }
 
-nav a:hover::after {
+header nav a:hover::after {
     width: 100%;
 }
 
@@ -1028,13 +1028,13 @@ footer .container > p + p {
         gap: 0.8rem;
     }
 
-    nav ul {
+    header nav ul {
         gap: 1rem;
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    nav a {
+    header nav a {
         margin: 0 0.6rem;
     }
 
