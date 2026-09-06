@@ -17,5 +17,6 @@ Local photos used on destination cards, galleries, and circuit heroes.
 - `barabar-caves.jpg`
 - `rohtasgarh-fort.jpg`
 - `hero-home.jpg`
+- `logo.jpg`
 
 Extra views use `{name}-2.jpg`, `{name}-3.jpg`, `{name}-4.jpg`. Keep these names stable so the HTML paths stay valid. Optimize new photos for the web before adding them.

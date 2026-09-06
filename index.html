@@ -15,6 +15,7 @@
     <meta name="twitter:title" content="Explore Bihar - Land of Ancient Heritage & Spiritual Wisdom">
     <meta name="twitter:description" content="Discover Bihar's rich cultural heritage, from the sacred Mahabodhi Temple to the ancient Nalanda University.">
     <title>Explore Bihar - Land of Ancient Heritage & Spiritual Wisdom</title>
+    <link rel="icon" href="assets/images/logo.jpg" type="image/jpeg">
     <link rel="canonical" href="https://explorebihar.com">
     <style>
         * {
@@ -80,6 +81,20 @@
             display: flex;
             align-items: center;
             gap: 10px;
+        }
+
+        .logo img {
+            height: 52px;
+            width: 52px;
+            object-fit: cover;
+            border-radius: 12px;
+            background: #f6f0e4;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header.scrolled .logo img {
+            height: 40px;
+            width: 40px;
         }
 
         .logo span {
@@ -688,7 +703,8 @@
         <div class="container">
             <div class="nav-container">
                 <a href="index.html" class="logo">
-                    🏛️ <span>Explore Bihar</span>
+                    <img src="assets/images/logo.jpg" alt="Explore Bihar logo">
+                    <span>Explore Bihar</span>
                 </a>
                 <nav>
                     <ul>
