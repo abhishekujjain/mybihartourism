@@ -37,7 +37,7 @@ Use the following naming convention for images:
 
 ## Notes
 
-- Currently using placeholder images from Unsplash
-- Replace with official images from Bihar tourism website
-- Ensure images are optimized for web use
-- Maintain consistent image dimensions across the site
+- Local JPEGs are used across the homepage, destination pages, and circuit heroes
+- Keep file names stable so HTML references do not break
+- Prefer additional views as `{name}-2.jpg`, `{name}-3.jpg`, `{name}-4.jpg`
+- Optimize new photos for the web before adding them
