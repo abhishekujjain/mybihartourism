@@ -393,6 +393,45 @@ header nav a:hover::after {
     margin-top: 1.4rem;
 }
 
+.guide-prose {
+    max-width: 52rem;
+    margin: 0 auto;
+    color: var(--muted);
+    line-height: 1.75;
+}
+
+.guide-prose h2 {
+    font-family: var(--font-display);
+    color: var(--ink);
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    margin: 2.5rem 0 0.75rem;
+}
+
+.guide-prose h2:first-of-type {
+    margin-top: 0;
+}
+
+.guide-intro {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 44rem;
+    margin: 0 auto 2rem;
+}
+
+.guide-list {
+    margin: 1rem 0 1.5rem 1.25rem;
+    display: grid;
+    gap: 0.75rem;
+}
+
+.guide-list a {
+    color: var(--sage-deep);
+}
+
+.guide-list a:hover {
+    color: var(--gold);
+}
+
 .seo-lead {
     max-width: 44rem;
     margin: -1.25rem auto 2.5rem;
